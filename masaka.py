@@ -479,15 +479,15 @@ def main():
     
 
     # Configure database settings after the Django project setup is complete
-    db_engine = 'django.db.backends.postgresql'
-    db_name = 'wdmdatabase'
-    db_user = 'atlas'
-    db_password = 'Lightvessel100!'
-    db_host = 'wdm-db.cihp8rwuaz6j.eu-north-1.rds.amazonaws.com'
-    db_port = '5432'
+    # db_engine = 'django.db.backends.postgresql'
+    # db_name = 'db_name'
+    # db_user = 'db_user'
+    # db_password = 'db_password!'
+    # db_host = 'wdm-db.cihp8rwuaz6j.eu-north-1.rds.amazonaws.com < reccomended'
+    # db_port = '5432'
 
-    setup.configure_settings(db_engine, db_name, db_user, db_password, db_host, db_port, apps)
-    print("Database configuration has been updated.")
+    #setup.configure_settings(db_engine, db_name, db_user, db_password, db_host, db_port, apps)
+    # print("Database configuration has been updated.")
 
     app_manager = AppPathManager(setup.project_full_path, setup.project_name, apps)  # Pass project_name here
     file_generator = FileGenerator()
